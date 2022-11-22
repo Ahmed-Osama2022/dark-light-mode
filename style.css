@@ -1,0 +1,188 @@
+/* Flexbox explain */
+
+:root {
+    --shadow: 0 1px 15px 0 #022;
+    --shadow2: 0 1px 25px #011;
+    --transition: box-shadow 0.5s 0.1s ease;
+}
+* {
+    padding: 0; 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+/* Container */
+.switch-container {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+}
+.switch-box {
+    /* width: 10%; */
+    background-color: #222222;
+    margin-top: 10px;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row ;
+    border-radius: 33px;
+    border: 8px solid rgb(148, 147, 147);
+    /* overflow-x: hidden; */
+
+    /* border: 4px solid rgb(148, 147, 147); */
+    box-shadow: var(--shadow);
+
+
+}
+
+.switch {
+    width: calc(96% / 2);
+    display: block;
+   
+    background-color: #3b3b3b;
+    color: #ddd;
+    border-radius: inherit;
+    padding: 5px;
+    text-align: center;
+    /* font-size: 1.05em; */
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+
+
+
+}
+
+#dark {
+    background-color: #3b3b3b;
+    color: #ddd;
+
+}
+#light {
+    background-color: #dcdada;
+    color: #0a0a0a;
+}
+.flex {
+    width: 100%;
+    font-size: 1.2em;
+    background-color: #222222;
+    color: #ddd;
+    margin-top: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 33px;
+    border: 8px solid rgb(148, 147, 147);
+    box-shadow: var(--shadow);
+
+    /* New properties */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+
+
+
+}
+.num {
+    text-align: center;
+    cursor: pointer;
+    padding: 5px; 
+    width: calc(98% / 3);
+    /* background-color: #2a2a2a; */
+    background-color: #3b3b3b;
+    outline: none;
+    /* Great idea here */
+    border-radius: inherit;
+
+    
+
+}
+.flex2 {
+    width: 100%;
+    font-size: 1.2em;
+    background-color: #222222;
+    color: #ddd;
+    margin-top: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 33px;
+    border: 8px solid rgb(148, 147, 147);
+    box-shadow: var(--shadow);
+
+    /* New properties */
+    justify-content: space-around;
+
+
+
+}
+.num2 {
+    text-align: center;
+    cursor: pointer;
+    padding: 5px; 
+    
+    /* Here we want space around the numbers!! */
+    width: calc(94% / 3);
+
+    /* background-color: #2a2a2a; */
+    background-color: #3b3b3b;
+    outline: none;
+    /* Great idea here */
+    border-radius: inherit;
+
+}
+/* Or you can just make a mix between: 
+* justify-content: space-around;
+* And
+* justify-content: space-between;
+* In:
+* justify-content: space-evenly; 
+*/
+
+.flex3 {
+    width: 100%;
+    font-size: 1.2em;
+    background-color: #222222;
+    color: #ddd;
+    margin-top: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 33px;
+    border: 8px solid rgb(148, 147, 147);
+    box-shadow: var(--shadow);
+
+    /* New properties */
+    justify-content: space-evenly;
+
+
+
+}
+.num3 {
+    text-align: center;
+    cursor: pointer;
+    padding: 5px; 
+    
+    /* Here we want space around the numbers!! */
+    width: calc(94% / 3);
+
+    /* background-color: #2a2a2a; */
+    background-color: #3b3b3b;
+    outline: none;
+    /* Great idea here */
+    border-radius: inherit;
+
+}
+p {
+    margin: 10px 0;
+    text-align: center;
+    /* text-transform: capitalize; */
+}
+
+.flex:hover,
+.flex2:hover,
+.flex3:hover,
+.switch-box:hover {
+    box-shadow: var(--shadow2);
+    transition: var(--transition);
+}
